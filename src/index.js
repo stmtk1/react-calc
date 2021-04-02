@@ -1,6 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import PropTypes from "prop-types";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 function HelloMessage({ name }) {
     return <div>Hello {name}</div>;
@@ -11,5 +11,6 @@ HelloMessage.propTypes = {
 };
 
 ReactDOM.render(
-    <HelloMessage name="Taylor" />, document.getElementById("main")
+    <HelloMessage name="Taylor" />,
+    document.getElementById('main')
 );

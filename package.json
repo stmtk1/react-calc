@@ -26,6 +26,11 @@
   },
   "scripts": {
     "dev": "webpack serve",
-    "lint": "eslint src/*.js"
+    "eslint:lint": "eslint src/*.js",
+    "eslint:fix": "yarn eslint:lint --fix",
+    "prettier:lint": "prettier --check --config .prettierrc.js src/*.js",
+    "prettier:fix": "prettier --config .prettierrc.js src/*.js -w",
+    "lint": "yarn eslint:lint; yarn prettier:lint",
+    "fix": "yarn eslint:fix; yarn prettier:fix"
   }
 }

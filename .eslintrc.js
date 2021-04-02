@@ -1,7 +1,7 @@
 module.exports = {
     rules: {
         semi: ["error", "always"],
-        quotes: ["error", "double"],
+        quotes: ["error", "single"],
     },
     parserOptions: {
         sourceType: "module",
@@ -10,4 +10,9 @@ module.exports = {
     extends: ["eslint:recommended", "plugin:react/recommended"],
     plugins: ["react", "react-hooks"],
     env: { browser: true },
+    settings: {
+        react: {
+            version: "17.0.1",
+        },
+    },
 }
